@@ -14,7 +14,7 @@ The closest thing to this is, in some sense, Wikipedia. But it's meant to be a r
 
 **Example 1:** [This article](http://manishearth.github.io/blog/2017/03/04/what-are-sum-product-and-pi-types/) explains sum, product and pi types. It requires knowledge of structs and enums, optionally requires basic set theory. It provides (basic knowledge of)/(intuition to) sum, product and pi types. If a learner wants to learn sum, product and pi types. They would have to have learned structs and enums before. Once they read the article, they could mark sum, product and pi types as learned (or a lighter version such as "basic understanding") in their tree, and even get informed about what "next steps" would be.
 
-**Example 2:** The entirety of Khan Academy could be put in such a learning tree.
+**Example 2:** The entirety of Khan Academy could be put in such a learning tree. They already have a [basic one](https://www.khanacademy.org/exercisedashboard) of their own, although quite dated (designwise) and messy.
 
 
 ## Value proposition
