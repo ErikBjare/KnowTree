@@ -4,12 +4,12 @@ LearningTree
 (Name [undecided](#naming))
 
 
-# Core Idea
+# About
 
 Similar to a [technology tree in video games](https://en.wikipedia.org/wiki/Technology_tree) but for learning stuff in real life. Essentially a dependency graph for learning.
 
 
-# Examples
+## Examples
 
 **Example 1:** [This article](http://manishearth.github.io/blog/2017/03/04/what-are-sum-product-and-pi-types/) explains sum, product and pi types. It requires knowledge of structs and enums, optionally requires basic set theory. It provides (basic knowledge of)/(intuition to) sum, product and pi types. If a learner wants to learn sum, product and pi types. They would have to have learned structs and enums before. Once they read the article, they could mark sum, product and pi types as learned (or a lighter version such as "basic understanding") in their tree, and even get informed about what "next steps" would be.
 
@@ -27,7 +27,7 @@ Similar to a [technology tree in video games](https://en.wikipedia.org/wiki/Tech
  - Freedom of learning *what you want* while still learning *what you need*.
    - There is no core curricula, the user can themselves choose which path they want to take while still getting some indication of which paths are reasonable.
 
-# Naming
+## Naming
 
 Alternative names (domain names are a bitch):
 
@@ -99,15 +99,23 @@ The real question is how to do it in a way that minimizes the complexity of the 
  - Recommended/optional prerequisite
 
 
-# Questions
+# Issues
 
- - Is the tree actually a tree? Might it actually be a graph?
-   - It will at least be a directed acyclic graph (I hope, otherwise it'd be messy)
- - Is there any good way to monetizing it without sacrificing maximum value provided?
+There might be plenty of things making the idea in need of modification or entirely unfeasible/impractical, those things go here.
+
+ - Looking for feedback currently, expect more here in the future.
+ - Too simplistic? Can we really reduce knowledge to a tree/graph in a useful way?
+ - Monetization: Is there any good way to monetizing it without sacrificing maximum value provided?
    - Donations work, but have their own problems.
    - Offering a premium service of some sorts?
      - Enterprise?
        - Support for closed ecosystems?
      - Pro users?
+
+
+# Questions
+
+ - Is the tree actually a tree? Might it actually be a graph?
+   - It will at least be a directed acyclic graph (I hope, otherwise it'd be messy)
  - Might a tree/graph like this be useful in training AI?
 
