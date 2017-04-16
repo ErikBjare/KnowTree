@@ -8,6 +8,7 @@ LearningTree
 
 Similar to a [technology tree in video games](https://en.wikipedia.org/wiki/Technology_tree) but for learning stuff in real life. Essentially a dependency graph for learning.
 
+The closest thing to this is, in some sense, Wikipedia. But it's meant to be a reference, [not a directory](https://en.wikipedia.org/wiki/Wikipedia:What_Wikipedia_is_not#Wikipedia_is_not_a_directory) and [not a textbook](https://en.wikipedia.org/wiki/Wikipedia:What_Wikipedia_is_not#Wikipedia_is_not_a_manual.2C_guidebook.2C_textbook.2C_or_scientific_journal).
 
 ## Examples
 
@@ -54,8 +55,9 @@ I've made some basic searches, nothing found. But more extensive searching would
 
 ### Extras
 
- - Voting on learning resources
-   - Reddit-style voting
+ - Voting/rating of learning resources
+   - Reddit-style voting or rating?
+   - Votes/ratings will likely differ largely depending on the learners pre-existing knowledge.
  - Wiki-like editing of the tree (each node a file?)
 
 
@@ -105,6 +107,8 @@ There might be plenty of things making the idea in need of modification or entir
 
  - Looking for feedback currently, expect more here in the future.
  - Too simplistic? Can we really reduce knowledge to a tree/graph in a useful way?
+ - Knowledge about a topic usually has levels (basic, intermediate, advanced, expert), these would be hard to structure in the graph.
+   - We should probably focus on basics/intermediate knowledge first anyway, so might not be that big of an issue initially.
  - Monetization: Is there any good way to monetizing it without sacrificing maximum value provided?
    - Donations work, but have their own problems.
    - Offering a premium service of some sorts?
