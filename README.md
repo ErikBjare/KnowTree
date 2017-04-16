@@ -43,6 +43,7 @@ Alternative names (domain names are a bitch):
 
 I've made some basic searches, nothing found. But more extensive searching would be in order.
 
+Update: Turns out [Nikita Voloboev](https://github.com/nikitavoloboev), [who's mindmap repo I've found before](https://github.com/nikitavoloboev/knowledge-map) is "Building a visual search engine and mind maps to organise world's knowledge with a study plan for learning anything" (his GitHub profile description 2017-04-16). Looks like he's taking a different approach however.
 
 # Requirements
 
@@ -79,6 +80,7 @@ The real question is how to do it in a way that minimizes the complexity of the 
  - Topics/Concepts (goals?)
    - Can belong to one or more fields of knowledge.
    - Essentially what you want to learn.
+   - [This PDF](https://worldview.unc.edu/files/2013/07/Getting-the-Big-Idea-Handout.pdf) contains some information about the "concept-topic divide".
  - Learning resources
    - Can supply knowledge about one or more topics/concepts
    - Examples:
