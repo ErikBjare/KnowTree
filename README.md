@@ -47,9 +47,10 @@ I've made some basic searches, nothing found. But more extensive searching would
 
 ### Core
 
- - User should be able to mark topics as `learned` or `want to learn`.
+ - User should be able to mark topics as `learned` (possibly on different levels such as basic or advanced) or `want to learn`.
  - The graph will highlight what the user needs to learn in order to learn what they want to in the end.
    - Example: If I want to learn how to build rockets, I should mark the topic/goal "build a rocket" as `want to learn` and subsequently, the graph/tree will highlight what I need to know to get there (ballistic physics, orbital mechanics).
+ - The graph should provide learning resources for the topics I want/need to learn.
 
 ### Extras
 
