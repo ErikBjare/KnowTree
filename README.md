@@ -30,7 +30,7 @@ The closest thing to this is, in some sense, Wikipedia. But it's meant to be a r
 
 ## Naming
 
-Alternative names (domain names are a bitch):
+Alternative names:
 
  - TreeLearn
  - LearnerTree
@@ -43,7 +43,8 @@ Alternative names (domain names are a bitch):
 
 I've made some basic searches, nothing found. But more extensive searching would be in order.
 
-Update: Turns out [Nikita Voloboev](https://github.com/nikitavoloboev), [who's mindmap repo I've found before](https://github.com/nikitavoloboev/knowledge-map) is "Building a visual search engine and mind maps to organise world's knowledge with a study plan for learning anything" (his GitHub profile description 2017-04-16). Looks like he's taking a different approach however.
+Update: Turns out [Nikita Voloboev](https://github.com/nikitavoloboev), [who's mindmap repo I've found before](https://github.com/nikitavoloboev/knowledge-map) is "Building a visual search engine and mind maps to organise world's knowledge with a study plan for learning anything" (his GitHub profile description 2017-04-16). Looks like he's taking a different approach, but has likely thought a lot about stuff related to this. I've reached out to him.
+
 
 # Requirements
 
@@ -106,7 +107,8 @@ The graph will contain at least three types of nodes:
 
 There might be plenty of things making the idea in need of modification or entirely unfeasible/impractical, those things go here.
 
- - Looking for feedback currently, expect more here in the future.
+ - Looking for feedback currently, expect more here in the future. 
+   - **Update:** I've reached out to a handful of friends for feedback, most of it overwhelmingly positive. I've created a [new section for feedback](#feedback).
  - Too simplistic? Can we really reduce knowledge to a tree/graph in a useful way?
  - Knowledge about a topic usually has levels (basic, intermediate, advanced, expert), these would be hard to structure in the graph.
    - We should probably focus on basics/intermediate knowledge first anyway, so might not be that big of an issue initially.
@@ -117,6 +119,9 @@ There might be plenty of things making the idea in need of modification or entir
        - Support for closed ecosystems?
      - Pro users?
 
+# Feedback
+
+The only feedback I've gotten so far has been extremely positive, still looking for more constructive feedback/ways to improve/potential issues.
 
 # Questions
 
