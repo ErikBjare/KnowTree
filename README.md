@@ -23,10 +23,10 @@ The closest thing to this is, in some sense, Wikipedia. But it's meant to be a r
    - If someone wants to learn X, they would be presented with a variety of options to do so. The work of figuring out how and where is just a matter of choosing between the presented options.
  - Keeping track of what you know.
    - Enables a simple way of letting others know what you know. Useful in resumes.
- - The user would be provided with an overview of what they can do with the thing they want to learn (how to build upon their acquired knowledge).
+ - The learner would be provided with an overview of what they can do with the thing they want to learn (how to build upon their acquired knowledge).
    - Example: If someone has just learned the basics of programming, they would be shown what they can do/learn with what knowledge.
  - Freedom of learning *what you want* while still learning *what you need*.
-   - There is no core curricula, the user can themselves choose which path they want to take while still getting some indication of which paths are reasonable.
+   - There is no core curricula, the learner can themselves choose which path they want to take while still getting some indication of which paths are reasonable.
 
 ## Naming
 
@@ -51,7 +51,7 @@ Update: Turns out [Nikita Voloboev](https://github.com/nikitavoloboev), [who's m
 ### Core
 
  - User should be able to mark topics as `learned` (possibly on different levels such as basic or advanced) or `want to learn`.
- - The graph will highlight what the user needs to learn in order to learn what they want to in the end.
+ - The graph will highlight what the learner needs to learn in order to learn what they want to in the end.
    - Example: If I want to learn how to build rockets, I should mark the topic/goal "build a rocket" as `want to learn` and subsequently, the graph/tree will highlight what I need to know to get there (ballistic physics, orbital mechanics).
  - The graph should provide learning resources for the topics I want/need to learn.
 
@@ -61,6 +61,7 @@ Update: Turns out [Nikita Voloboev](https://github.com/nikitavoloboev), [who's m
    - Reddit-style voting or rating?
    - Votes/ratings will likely differ largely depending on the learners pre-existing knowledge.
  - Wiki-like editing of the tree (each node a file?)
+   - Crowdsourcing of learning resources would be necessary for a global-scale thing (like Wikipedia), but obviously a long way there. One step at a time.
 
 
 # Implementation
@@ -117,7 +118,10 @@ There might be plenty of things making the idea in need of modification or entir
    - Offering a premium service of some sorts?
      - Enterprise?
        - Support for closed ecosystems?
-     - Pro users?
+     - Pro users? *(I just went through and s/user/learner'd the whole document, I laughed when I realized this would become Pro learner)*
+ - Internationalization
+   - Learning resources are usually specific to a certain language, some are translated however. 
+   - We'd need to track which languages a resource is available in if we want to scale beyond an english-speaking audience.
 
 # Feedback
 
