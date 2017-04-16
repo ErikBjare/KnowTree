@@ -68,21 +68,26 @@ It would probably be best implemented as a webapp. Visualization of the graph wo
 
 The real question is how to do it in a way that minimizes the complexity of the backend and frontend so that we can iterate quickly.
 
+Perhaps the graph itself could be represented with Neo4j?
+
 
 ## Datastructure
 
-
-### Types of nodes in tree
+The graph will contain at least three types of nodes:
 
  - Field of knowledge
    - Mathematics, Physics, Computer Science, etc.
-   - Essentially categories for more granular pieces of knowledge, some topics 
+   - Sub-fields would probably be necessary.
+   - Essentially serves as categories for more granular pieces of knowledge. Wikipedia already does categorization like this well.
  - Topics/Concepts (goals?)
    - Can belong to one or more fields of knowledge.
    - Essentially what you want to learn.
    - [This PDF](https://worldview.unc.edu/files/2013/07/Getting-the-Big-Idea-Handout.pdf) contains some information about the "concept-topic divide".
+   - Nodes of this type have relations to each other.
+     - Required prerequisites and recommended/optional prerequisites. 
+     - **This is what builds the arguably most important part of the graph.**
  - Learning resources
-   - Can supply knowledge about one or more topics/concepts
+   - Can supply knowledge about one or more topics/concepts.
    - Examples:
      - Reading materials
        - Articles
@@ -95,12 +100,6 @@ The real question is how to do it in a way that minimizes the complexity of the 
      - Flashcards?
      - Projects?
        - Could also be learning goals.
-
-
-### Relations between concepts in the tree
-
- - Required prerequisite
- - Recommended/optional prerequisite
 
 
 # Issues
