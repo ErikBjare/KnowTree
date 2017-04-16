@@ -45,6 +45,8 @@ I've made some basic searches, nothing found. But more extensive searching would
 
 Update: Turns out [Nikita Voloboev](https://github.com/nikitavoloboev), [who's mindmap repo I've found before](https://github.com/nikitavoloboev/knowledge-map) is "Building a visual search engine and mind maps to organise world's knowledge with a study plan for learning anything" (his GitHub profile description 2017-04-16). Looks like he's taking a different approach, but has likely thought a lot about stuff related to this. I've reached out to him.
 
+Update 2: Nikita gave some really good feedback, will integrate later.
+
 
 # Requirements
 
@@ -62,6 +64,8 @@ Update: Turns out [Nikita Voloboev](https://github.com/nikitavoloboev), [who's m
    - Votes/ratings will likely differ largely depending on the learners pre-existing knowledge.
  - Wiki-like editing of the tree (each node a file?)
    - Crowdsourcing of learning resources would be necessary for a global-scale thing (like Wikipedia), but obviously a long way there. One step at a time.
+ - Gamification
+   - This would likely increase user activity by a lot. Thanks @nikitavoloboev for the idea!
 
 
 # Implementation
