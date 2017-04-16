@@ -111,6 +111,11 @@ The graph will contain at least three types of nodes:
        - Could also be learning goals.
 
 
+## Visualization
+
+The [D3.js gallery](https://github.com/d3/d3/wiki/Gallery) has great examples. We could probably get a lot of good ideas from some of them.
+
+
 # Issues
 
 There might be plenty of things making the idea in need of modification or entirely unfeasible/impractical, those things go here.
