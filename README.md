@@ -37,6 +37,7 @@ Alternative names:
  - Graph-equivalents
    - LearnerGraph
    - LearningGraph (two g's in a row is probably bad)
+   - LearniGraph (gets rid of the two g's issue)
 
 
 # Is there something similar?
@@ -137,5 +138,5 @@ The only feedback I've gotten so far has been extremely positive, still looking 
 
  - Is the tree actually a tree? Might it actually be a graph?
    - It will at least be a directed acyclic graph (I hope, otherwise it'd be messy)
- - Might a tree/graph like this be useful in training AI?
+ - Might a tree/graph like this be useful in training/building AI?
 
