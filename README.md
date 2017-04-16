@@ -47,6 +47,8 @@ Update: Turns out [Nikita Voloboev](https://github.com/nikitavoloboev), [who's m
 
 Update 2: Nikita gave some really good feedback, will integrate later.
 
+[Arbital](https://arbital.com/) is an example of a wiki with some fresh ideas.
+
 
 # Requirements
 
