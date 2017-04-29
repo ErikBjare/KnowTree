@@ -51,7 +51,7 @@ Update 2: Nikita gave some really good feedback, will integrate later.
 
 [Arbital](https://arbital.com/) is an example of a wiki with some fresh ideas.
 
-Update 3: Googled around, [found this (Swedish)](https://magisterfalk.wordpress.com/tag/kunskapstrad/) which was interesting.
+Update 3: Googled around, [found this (Swedish)](https://magisterfalk.wordpress.com/tag/kunskapstrad/) which was interesting. Another datapoint to the claim that there's no such thing as a new idea. I should gather info from that blogger.
 
 # Requirements
 
@@ -116,6 +116,8 @@ The graph will contain at least three types of nodes:
 ## Visualization
 
 The [D3.js gallery](https://github.com/d3/d3/wiki/Gallery) has great examples. We could probably get a lot of good ideas from some of them.
+
+Update: I've started attempts at prototyping the structure of such a tree using [Gephi](https://gephi.org/).
 
 
 # Issues
