@@ -119,6 +119,7 @@ The [D3.js gallery](https://github.com/d3/d3/wiki/Gallery) has great examples. W
 
 Update: I've started attempts at prototyping the structure of such a tree using [Gephi](https://gephi.org/).
 
+Update 2: Gephi wasn't the right tool for the job, yEd was a lot better (but not open source). I found [this neat collapsible tree demo](http://live.yworks.com/yfiles-for-html/2.0/complete/collapse/index.html) on their website, the balloon style was really nice.
 
 # Issues
 
