@@ -38,6 +38,7 @@ Alternative names:
    - LearnerGraph
    - LearningGraph (two g's in a row is probably bad)
    - LearniGraph (gets rid of the two g's issue)
+ - Tree of Knowledge (or some variation thereof)
 
 
 # Is there something similar?
@@ -50,6 +51,7 @@ Update 2: Nikita gave some really good feedback, will integrate later.
 
 [Arbital](https://arbital.com/) is an example of a wiki with some fresh ideas.
 
+Update 3: Googled around, [found this (Swedish)](https://magisterfalk.wordpress.com/tag/kunskapstrad/) which was interesting.
 
 # Requirements
 
