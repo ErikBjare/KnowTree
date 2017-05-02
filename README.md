@@ -39,6 +39,7 @@ Alternative names:
    - LearningGraph (two g's in a row is probably bad)
    - LearniGraph (gets rid of the two g's issue)
  - Tree of Knowledge (or some variation thereof)
+   - I've bought the domain names knowledgetree.io and knowtree.io
 
 
 # Is there something similar?
