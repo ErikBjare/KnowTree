@@ -23,4 +23,4 @@ class Progress(Model):
     status = CharField()
 
     def __str__(self):
-        return f"<Progress of {self.user.username} on {self.link.url}: {self.status}>"
+        return f"<Progress of {self.user.username} on {self.link.url} was {self.status} at {self.timestamp}>"

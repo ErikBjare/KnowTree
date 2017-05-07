@@ -1,11 +1,12 @@
-from db import dbinit, interpreter
+from knowtree.db import dbinit
+from knowtree.cli import main
 
 
 def run():
     print("Running...")
     dbinit.db_init()
 
-    interpreter.interactive()
+    main()
 
 
 def run_rest():

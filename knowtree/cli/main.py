@@ -1,6 +1,6 @@
 import sys
 
-from .models import Category, Link, Relationship, User, Progress
+from ..db.models import Category, Link, Relationship, User, Progress
 
 
 def list_full():
@@ -63,7 +63,7 @@ def _loop():
         print("Unknown command")
 
 
-def interactive():
+def main():
     while True:
         try:
             _loop()
