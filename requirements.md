@@ -17,3 +17,12 @@ Requirements
    - Crowdsourcing of learning resources would be necessary for a global-scale thing (like Wikipedia), but obviously a long way there. One step at a time.
  - Gamification
    - This would likely increase user activity by a lot. Thanks @nikitavoloboev for the idea!
+ - Crowdsourcing
+   - (see the browser extension extra)
+ - Browser extension
+   - To record viewed resources.
+   - To help crowdsource the datbase
+     - If something is a learning resource, the extension should detect it is in the database (and the user provided a link to the entry in the tree) and if it isn't the user should be able to submit it. 
+
+
+

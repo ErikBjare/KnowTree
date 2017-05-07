@@ -31,20 +31,3 @@ The view for a concept should:
 ## Field / Branch / Topic
 
 Should contain a link to the Wikipedia article about itself and perhaps the summary from the article.
-
-# Extras
-
-## Crowdsourcing
-
-(see the browser extension extra)
-
-
-
-## Browser extension
-
-- To record viewed resources.
-- To help crowdsource the datbase
-  - If something is a learning resource, the extension should detect it is in the database (and the user provided a link to the entry in the tree) and if it isn't the user should be able to submit it. 
-
-
-
