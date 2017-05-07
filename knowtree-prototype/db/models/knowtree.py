@@ -44,26 +44,3 @@ class Relationship(Model):
 
     def __str__(self):
         return f"<{self.from_category} -> {self.to_link}>"
-
-
-def db_init():
-    database.connect()
-    database.create_tables([Category, Link, Relationship], True)
-    print(f"Tables created: {database.get_tables()}")
-
-
-def _create_math_cat():
-    cat_math, created = Category.get_or_create(title="Mathematics")
-    return cat_math
-
-
-def _create_math_links(math_cat):
-    link, created = Link.get_or_create(title="KhanAcademy", url="https://khanacademy.org/")
-    rel, created = Relationship.get_or_create(from_category=math_cat, to_link=link)
-
-
-def create_example_graph():
-    cat_math = _create_math_cat()
-    _create_math_links(cat_math)
-
-    cat_algebra, created = Category.get_or_create(title="Calculus", supercat=cat_math)

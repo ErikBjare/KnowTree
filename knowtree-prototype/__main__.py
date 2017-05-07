@@ -1,5 +1,20 @@
-import app
+from db import dbinit, interpreter
 
-app = app.create_app()
 
-app.run()
+def run():
+    print("Running...")
+    dbinit.db_init()
+
+    interpreter.interactive()
+
+
+def run_rest():
+    import app
+
+    app = app.create_app()
+
+    app.run()
+
+
+if __name__ == "__main__":
+    run()
