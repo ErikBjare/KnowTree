@@ -1,8 +1,9 @@
-LearningTree
-============
+KnowTree
+========
 
 (Name [undecided](#naming))
 
+For usage of the early prototyping code see `USAGE.md`.
 
 # About
 
