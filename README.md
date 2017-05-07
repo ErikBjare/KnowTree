@@ -10,6 +10,9 @@ Similar to a [technology tree in video games](https://en.wikipedia.org/wiki/Tech
 
 The closest thing to this is, in some sense, Wikipedia. But it's meant to be a reference, [not a directory](https://en.wikipedia.org/wiki/Wikipedia:What_Wikipedia_is_not#Wikipedia_is_not_a_directory) and [not a textbook](https://en.wikipedia.org/wiki/Wikipedia:What_Wikipedia_is_not#Wikipedia_is_not_a_manual.2C_guidebook.2C_textbook.2C_or_scientific_journal).
 
+It is essentially a personal [Learning Management System](https://en.wikipedia.org/wiki/Learning_management_system).
+
+
 ## Examples
 
 **Example 1:** [This article](http://manishearth.github.io/blog/2017/03/04/what-are-sum-product-and-pi-types/) explains sum, product and pi types. It requires knowledge of structs and enums, optionally requires basic set theory. It provides (basic knowledge of)/(intuition to) sum, product and pi types. If a learner wants to learn sum, product and pi types. They would have to have learned structs and enums before. Once they read the article, they could mark sum, product and pi types as learned (or a lighter version such as "basic understanding") in their tree, and even get informed about what "next steps" would be.
@@ -26,7 +29,8 @@ The closest thing to this is, in some sense, Wikipedia. But it's meant to be a r
  - The learner would be provided with an overview of what they can do with the thing they want to learn (how to build upon their acquired knowledge).
    - Example: If someone has just learned the basics of programming, they would be shown what they can do/learn with what knowledge.
  - Freedom of learning *what you want* while still learning *what you need*.
-   - There is no core curricula, the learner can themselves choose which path they want to take while still getting some indication of which paths are reasonable.
+   - There is no core curricula, the learner can themselves choose which path they want to take while still getting some indication of which paths are reasonable/practical.
+
 
 ## Naming
 
@@ -53,25 +57,6 @@ Update 2: Nikita gave some really good feedback, will integrate later.
 [Arbital](https://arbital.com/) is an example of a wiki with some fresh ideas.
 
 Update 3: Googled around, [found this (Swedish)](https://magisterfalk.wordpress.com/tag/kunskapstrad/) which was interesting. Another datapoint to the claim that there's no such thing as a new idea. I should gather info from that blogger.
-
-# Requirements
-
-### Core
-
- - User should be able to mark topics as `learned` (possibly on different levels such as basic or advanced) or `want to learn`.
- - The graph will highlight what the learner needs to learn in order to learn what they want to in the end.
-   - Example: If I want to learn how to build rockets, I should mark the topic/goal "build a rocket" as `want to learn` and subsequently, the graph/tree will highlight what I need to know to get there (ballistic physics, orbital mechanics).
- - The graph should provide learning resources for the topics I want/need to learn.
-
-### Extras
-
- - Voting/rating of learning resources
-   - Reddit-style voting or rating?
-   - Votes/ratings will likely differ largely depending on the learners pre-existing knowledge.
- - Wiki-like editing of the tree (each node a file?)
-   - Crowdsourcing of learning resources would be necessary for a global-scale thing (like Wikipedia), but obviously a long way there. One step at a time.
- - Gamification
-   - This would likely increase user activity by a lot. Thanks @nikitavoloboev for the idea!
 
 
 # Implementation
