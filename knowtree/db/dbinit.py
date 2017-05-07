@@ -1,3 +1,4 @@
+import logging
 from datetime import datetime, timezone
 
 from . import database
@@ -13,11 +14,11 @@ def db_init():
 
     if not database.get_tables():
         database.create_tables([Category, Link, Relationship, User, Progress], True)
-        print(f"Tables created: {database.get_tables()}")
+        logging.info(f"Tables created: {database.get_tables()}")
 
         _create_example_graph()
     else:
-        print("Database was already initalized")
+        logging.info("Database was already initalized")
 
 
 def _create_example_graph():

@@ -3,7 +3,6 @@ from knowtree.cli import main
 
 
 def run():
-    print("Running...")
     dbinit.db_init()
 
     main()

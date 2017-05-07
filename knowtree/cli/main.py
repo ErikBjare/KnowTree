@@ -1,11 +1,19 @@
 import sys
+import logging
+
+import colorama
+from colorama import Fore, Style
 
 from ..db.models import Category, Link, Relationship, User, Progress
+
+_msg_created = f"{Fore.GREEN}Created!"
+_msg_already_exists = f"{Fore.RED}Already exists"
+_msg_unknown_command = f"{Fore.RED}Unknown command"
 
 
 def list_full():
     for Table in [Category, Link, Relationship, User, Progress]:
-        print(f"{Table.__name__}: ")
+        print(f"{Style.BRIGHT}{Table.__name__}: ")
         for item in Table.select():
             print(f" - {item}")
 
@@ -14,9 +22,9 @@ def interactive_create_user():
     username = input("Username: ")
     user, created = User.get_or_create(username=username)
     if created:
-        print("Created!")
+        print(_msg_created)
     else:
-        print("Already existed")
+        print(_msg_already_exists)
 
 
 def interactive_create_link():
@@ -24,9 +32,9 @@ def interactive_create_link():
     url = input("URL: ")
     link, created = Link.get_or_create(title=title, url=url)
     if created:
-        print("Created!")
+        print(_msg_created)
     else:
-        print("Already existed")
+        print(_msg_already_exists)
 
 
 def interactive_create():
@@ -40,8 +48,9 @@ def interactive_create():
 
 
 def print_help():
-    print(" - create (alias: c)")
-    print(" - list (alias: l)")
+    print("Available commands:")
+    for full, alias in [("create", "c"), ("list", "ls")]:
+        print(f" - {Style.BRIGHT}{full}{Style.RESET_ALL} (alias: {alias})")
 
 
 def _quit():
@@ -49,25 +58,31 @@ def _quit():
     sys.exit(0)
 
 
-def _loop():
-    cmd = input("> ")
+def cmd_eval(cmd):
     if cmd.lower() in ["c", "create"]:
         interactive_create()
-    elif cmd.lower() in ["l", "list"]:
+    elif cmd.lower() in ["ls", "list"]:
         list_full()
     elif cmd.lower() in ["h", "help"]:
         print_help()
     elif cmd.lower() in ["exit"]:
         _quit()
     else:
-        print("Unknown command")
+        print(_msg_unknown_command)
 
 
 def main():
-    while True:
-        try:
-            _loop()
-        except KeyboardInterrupt:
-            print("\nUse command 'exit' or Ctrl+D (EOF) to quit.")
-        except EOFError:
-            _quit()
+    colorama.init(autoreset=True)
+
+    if sys.stdin.isatty():
+        logging.basicConfig(level=logging.INFO)
+        print(f"{Style.BRIGHT}Welcome to the {Fore.GREEN}knowtree{Fore.RESET} CLI!")
+        while True:
+            try:
+                cmd_eval(input(f"{Fore.YELLOW}>{Fore.RESET} "))
+            except KeyboardInterrupt:
+                print("\nUse command 'exit' or Ctrl+D (EOF) to quit.")
+            except EOFError:
+                _quit()
+    else:
+        cmd_eval(input())
