@@ -12,4 +12,5 @@ install:
 #- "make build"
 
 script:
+ - "echo 'h' | python ."
  - "echo 'l' | python ."

@@ -23,6 +23,8 @@ Requirements
    - To record viewed resources.
    - To help crowdsource the datbase
      - If something is a learning resource, the extension should detect it is in the database (and the user provided a link to the entry in the tree) and if it isn't the user should be able to submit it. 
+ - ActivityWatch import
+   - Could be immensly helpful in building the database and could provide a way to collect data without a specific browser plugin for starters (and share code later on).
 
 
 

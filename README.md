@@ -11,7 +11,9 @@ Similar to a [technology tree in video games](https://en.wikipedia.org/wiki/Tech
 
 The closest thing to this is, in some sense, Wikipedia. But it's meant to be a reference, [not a directory](https://en.wikipedia.org/wiki/Wikipedia:What_Wikipedia_is_not#Wikipedia_is_not_a_directory) and [not a textbook](https://en.wikipedia.org/wiki/Wikipedia:What_Wikipedia_is_not#Wikipedia_is_not_a_manual.2C_guidebook.2C_textbook.2C_or_scientific_journal).
 
-It is essentially a personal [Learning Management System](https://en.wikipedia.org/wiki/Learning_management_system).
+It is essentially a new type of generation [Learning Management System](https://en.wikipedia.org/wiki/Learning_management_system) which is a lot more personal and of personal value.
+
+Perhaps a better analogy would be a fancy digital [learning log](https://en.wikipedia.org/wiki/Learning_log) where everything you've learned it immortalized. This would be used for analysis of what you know (based on what you have learned), what you don't, how you could learn something (links to rated resources) and make a lesson plan to learn anything (by mapping out learing prerequisites). It could also be used for simply keeping track of what you know and what you've learned, a good start. An activity graph would be a powerful tool to motivate the user.
 
 
 ## Examples
