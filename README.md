@@ -25,14 +25,24 @@ Perhaps a better analogy would be a fancy digital [learning log](https://en.wiki
 
 ## Value proposition
 
- - Planning out what you need to learn in order to reach some goal. (Learning the concepts you want to learn by telling you what you need to learn to get there)
-   - If someone wants to learn X, they would be presented with a variety of options to do so. The work of figuring out how and where is just a matter of choosing between the presented options.
- - Keeping track of what you know.
+ - Enables you to keep track of what you know and don't know.
+   - Likely motivating for the learner to have an overview.
+   - Makes it easy to find the gaps.
    - Enables a simple way of letting others know what you know. Useful in resumes.
- - The learner would be provided with an overview of what they can do with the thing they want to learn (how to build upon their acquired knowledge).
-   - Example: If someone has just learned the basics of programming, they would be shown what they can do/learn with what knowledge.
+ - The learner would be provided with an overview of what they can do with the things they have learned.
+   - A kind of reversal of prerequisites.
+   - Example: Someone has just learned the basics of programming, they would be shown what they can do/learn with what knowledge. Such as app/web/game dev, AI, robotics, CS theory.
  - Freedom of learning *what you want* while still learning *what you need*.
-   - There is no core curricula, the learner can themselves choose which path they want to take while still getting some indication of which paths are reasonable/practical.
+   - The learner can themselves choose which path they want to take while still getting some indication of which paths are reasonable/practical and lead to the desired goal.
+   - There might still be user-created "tracks"/curricula,
+     - Could also be generated from user data.
+ - Optimizing the learning process.
+   - Learn faster by getting to know what you don't know.
+   - Learn faster by getting recommendations for the best learning resource 
+     - Which the best resource is could vary from person to person.
+ - Planning out what you need to learn in order to reach some goal. 
+   - [CLARIFY] If someone wants to learn X, they would be presented with a variety of options to do so. The work of figuring out how and where is just a matter of choosing between the presented options.
+   - [CLARIFY] Learn the concepts you want to learn, and get help with what you need to to get there.
 
 
 ## Naming
@@ -68,7 +78,9 @@ It would probably be best implemented as a webapp. Visualization of the graph wo
 
 The real question is how to do it in a way that minimizes the complexity of the backend and frontend so that we can iterate quickly.
 
-Perhaps the graph itself could be represented with Neo4j?
+Perhaps the graph itself could be represented with Neo4j? (Edit: Likely overkill, relational database will probably be enough to start off with)
+
+How to classify learning resources in some automatized way? Doesn't have to be overly advanced, just have to be decent. ([Example](https://news.ycombinator.com/item?id=14337275))
 
 
 ## Datastructure
@@ -77,8 +89,9 @@ The graph will contain at least three types of nodes:
 
  - Field of knowledge
    - Mathematics, Physics, Computer Science, etc.
-   - Sub-fields would probably be necessary.
-   - Essentially serves as categories for more granular pieces of knowledge. Wikipedia already does categorization like this well.
+   - Essentially serves as categories for more granular pieces of knowledge.
+   - Wikipedia already does categorization like this well and can be retrieved from the [dumps](https://stackoverflow.com/questions/17432254/wikipedia-category-hierarchy-from-dumps).
+   - The topics would be linkable to Wikipedia articles as well, making categorization easier.
  - Topics/Concepts (goals?)
    - Can belong to one or more fields of knowledge.
    - Essentially what you want to learn.
