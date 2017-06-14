@@ -63,18 +63,24 @@ Alternative names:
 
 I've made some basic searches, nothing found. But more extensive searching would be in order.
 
-Update: Turns out [Nikita Voloboev](https://github.com/nikitavoloboev), [who's mindmap repo I've found before](https://github.com/nikitavoloboev/knowledge-map) is "Building a visual search engine and mind maps to organise world's knowledge with a study plan for learning anything" (his GitHub profile description 2017-04-16). Looks like he's taking a different approach, but has likely thought a lot about stuff related to this. I've reached out to him.
+**Update 1:** Turns out [Nikita Voloboev](https://github.com/nikitavoloboev), [who's mindmap repo I've found before](https://github.com/nikitavoloboev/knowledge-map) is "Building a visual search engine and mind maps to organise world's knowledge with a study plan for learning anything" (his GitHub profile description 2017-04-16). Looks like he's taking a different approach, but has likely thought a lot about stuff related to this. I've reached out to him.
 
-Update 2: Nikita gave some really good feedback, will integrate later.
+**Update 2:** Nikita gave some really good feedback, will integrate later.
 
-[Arbital](https://arbital.com/) is an example of a wiki with some fresh ideas.
+Also, [Arbital](https://arbital.com/) is an example of a wiki with some fresh ideas.
 
-Update 3: Googled around, [found this (Swedish)](https://magisterfalk.wordpress.com/tag/kunskapstrad/) which was interesting. Another datapoint to the claim that there's no such thing as a new idea. I should gather info from that blogger.
+**Update 3:** Googled around, [found this (Swedish)](https://magisterfalk.wordpress.com/tag/kunskapstrad/) which was interesting. Another datapoint to the claim that there's no such thing as a new idea. I should gather info from that blogger.
+
+**Update 4:** Got a Twitter ad for Pluralsight, apparently a long-time player in the technology learning market. They seem to have some sort of progress system but I've yet to try it. Should probably sign up for a trial and check it out.
+
+[Someone on HN posted a lecture search engine](https://news.ycombinator.com/item?id=14484549). Interesting stuff for sure, highly relevant (but we might want to go for curated/contributor style adding of learning resources instead of crawling the web to start with, leads to higher quality information).
+
+Also found [Learnodoro](learnodoro.com) ([The creators Twitter](https://twitter.com/learnodoro)). Not entirely sure what the angle is but seems like he is planning some kind of progress system as well.
 
 
 # Implementation
 
-It would probably be best implemented as a webapp. Visualization of the graph would likely be best done with D3.
+It would probably be best implemented as a webapp.
 
 The real question is how to do it in a way that minimizes the complexity of the backend and frontend so that we can iterate quickly.
 
@@ -82,32 +88,34 @@ Perhaps the graph itself could be represented with Neo4j? (Edit: Likely overkill
 
 How to classify learning resources in some automatized way? Doesn't have to be overly advanced, just have to be decent. ([Example](https://news.ycombinator.com/item?id=14337275))
 
+**Update 1:** I've started some basic work on a prototype. Not much yet.
 
 ## Datastructure
 
-The graph will contain at least three types of nodes:
+The graph will contain something similar to these three types of nodes:
 
- - Field of knowledge
+ - Field of knowledge (category)
    - Mathematics, Physics, Computer Science, etc.
    - Essentially serves as categories for more granular pieces of knowledge.
    - Wikipedia already does categorization like this well and can be retrieved from the [dumps](https://stackoverflow.com/questions/17432254/wikipedia-category-hierarchy-from-dumps).
    - The topics would be linkable to Wikipedia articles as well, making categorization easier.
  - Topics/Concepts (goals?)
    - Can belong to one or more fields of knowledge.
-   - Essentially what you want to learn.
+   - ~~Essentially what you want to learn.~~
    - [This PDF](https://worldview.unc.edu/files/2013/07/Getting-the-Big-Idea-Handout.pdf) contains some information about the "concept-topic divide".
    - Nodes of this type have relations to each other.
      - Required prerequisites and recommended/optional prerequisites. 
      - **This is what builds the arguably most important part of the graph.**
- - Learning resources
+ - Learning resources (resource)
    - Can supply knowledge about one or more topics/concepts.
    - Examples:
-     - Reading materials
+     - Reading/watching materials (no interaction)
        - Articles
        - Books
-     - Exercises
+       - Videos
+     - Exercises (interaction)
        - Khan Academy
-     - Courses
+     - Courses (planned paths)
        - MOOCs
        - Brick-and-mortar University courses
      - Flashcards?
@@ -115,13 +123,18 @@ The graph will contain at least three types of nodes:
        - Could also be learning goals.
 
 
-## Visualization
+# Visualization
+
+Visualization of the graph would likely be best done with D3. 
 
 The [D3.js gallery](https://github.com/d3/d3/wiki/Gallery) has great examples. We could probably get a lot of good ideas from some of them.
 
-Update: I've started attempts at prototyping the structure of such a tree using [Gephi](https://gephi.org/).
+**Update 1:** I've started attempts at prototyping the structure of such a tree using [Gephi](https://gephi.org/).
 
-Update 2: Gephi wasn't the right tool for the job, yEd was a lot better (but not open source). I found [this neat collapsible tree demo](http://live.yworks.com/yfiles-for-html/2.0/complete/collapse/index.html) on their website, the balloon style was really nice.
+**Update 2:** Gephi wasn't the right tool for the job, yEd was a lot better (but not open source). I found [this neat collapsible tree demo](http://live.yworks.com/yfiles-for-html/2.0/complete/collapse/index.html) on their website, the balloon style was really nice.
+
+**Update 3:** Is graph-style visualization of the graph really important? It might be good if it can instill a sense of overview/progress but otherwise we should perhaps be sceptical. Facebook initially also planned to visualize a graph for you, but they dropped out. Probably due to business reasons, but might it be due to something else I fail to account for?
+
 
 # Issues
 
@@ -142,9 +155,11 @@ There might be plenty of things making the idea in need of modification or entir
    - Learning resources are usually specific to a certain language, some are translated however. 
    - We'd need to track which languages a resource is available in if we want to scale beyond an english-speaking audience.
 
+
 # Feedback
 
 The only feedback I've gotten so far has been extremely positive, still looking for more constructive feedback/ways to improve/potential issues.
+
 
 # Questions
 
