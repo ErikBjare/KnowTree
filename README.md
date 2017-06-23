@@ -77,6 +77,8 @@ Also, [Arbital](https://arbital.com/) is an example of a wiki with some fresh id
 
 Also found [Learnodoro](learnodoro.com) ([The creators Twitter](https://twitter.com/learnodoro)). Not entirely sure what the angle is but seems like he is planning some kind of progress system as well.
 
+**Update 5:** Just re-discovered https://openbadges.org/, seems like a good project that left a lot of the interesting parts untouched (no focus on personal tracking of progress, just on verifiable progress).
+
 
 # Implementation
 
