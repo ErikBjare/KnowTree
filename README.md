@@ -27,6 +27,7 @@ That does not longer seem to be the case, but I still think it should be to a la
 
 [Peter Thiel seems to agree](https://www.youtube.com/watch?v=rzdiWDw4teo&t=328s)
 
+I even found an old .txt file I had written in january 2012 about the "home of knowledge" which was an idea for a platform where learning resources could be shared and voted on in a reddit-like fashion.
 
 ## Examples
 
