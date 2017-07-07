@@ -90,6 +90,8 @@ Also, [Arbital](https://arbital.com/) is an example of a wiki with some fresh id
 
 Also found [Learnodoro](learnodoro.com) ([The creators Twitter](https://twitter.com/learnodoro)). Not entirely sure what the angle is but seems like he is planning some kind of progress system as well.
 
+**Update 5:** Just re-discovered https://openbadges.org/, seems like a good project that left a lot of the interesting parts untouched (no focus on personal tracking of progress, just on verifiable progress).
+
 
 # Implementation
 
@@ -105,16 +107,17 @@ How to classify learning resources in some automatized way? Doesn't have to be o
 
 ## Datastructure
 
-The graph will contain something similar to these three types of nodes:
+The database will contain something similar to these types of objects:
 
- - Field of knowledge (category)
+ - Field/body of knowledge (category)
    - Mathematics, Physics, Computer Science, etc.
    - Essentially serves as categories for more granular pieces of knowledge.
    - Wikipedia already does categorization like this well and can be retrieved from the [dumps](https://stackoverflow.com/questions/17432254/wikipedia-category-hierarchy-from-dumps).
    - The topics would be linkable to Wikipedia articles as well, making categorization easier.
+   - **Unclear why this would be qualitatively different from a larger topic/concept.**
  - Topics/Concepts (goals?)
    - Can belong to one or more fields of knowledge.
-   - ~~Essentially what you want to learn.~~
+   - ~~Essentially what you want to learn.~~ Things you can learn about.
    - [This PDF](https://worldview.unc.edu/files/2013/07/Getting-the-Big-Idea-Handout.pdf) contains some information about the "concept-topic divide".
    - Nodes of this type have relations to each other.
      - Required prerequisites and recommended/optional prerequisites. 
@@ -134,6 +137,10 @@ The graph will contain something similar to these three types of nodes:
      - Flashcards?
      - Projects?
        - Could also be learning goals.
+ - Verification/Accreditation
+   - The problem: People would want to prove their ability. 
+   - Solution: There are a lot of existing ways to do this (tests, courses) 
+     so the easiest thing to do is just to let them handle it (i.e. users can claim verification is available, that they would need to be able to show if asked to do so).
 
 
 # Visualization
