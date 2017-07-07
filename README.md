@@ -15,6 +15,18 @@ It is essentially a new type of generation [Learning Management System](https://
 
 Perhaps a better analogy would be a fancy digital [learning log](https://en.wikipedia.org/wiki/Learning_log) where everything you've learned it immortalized. This would be used for analysis of what you know (based on what you have learned), what you don't, how you could learn something (links to rated resources) and make a lesson plan to learn anything (by mapping out learing prerequisites). It could also be used for simply keeping track of what you know and what you've learned, a good start. An activity graph would be a powerful tool to motivate the user.
 
+# Background
+
+When I was in high school, a new form of education arose on the internet, namely MOOCs and sites such as Khan Academy.
+
+I spend a considerable amount of time on Udacity, Khan Academy and Coursera during my third year of high school and I think I learned more that year than any other thanks to these services.
+I thought the MOOC revolution was going to take off, and it did to some degree, but it's potential is still very much underappreciated.
+
+When I realized how effective online courses were for me to learn, I thought that conventional schooling had its days numbered. 
+That does not longer seem to be the case, but I still think it should be to a large degree. KnowTree will hopefully lead to people realizing that they aren't getting the best education offline, they could be getting something even better online.
+
+[Peter Thiel seems to agree](https://www.youtube.com/watch?v=rzdiWDw4teo&t=328s)
+
 
 ## Examples
 
@@ -134,7 +146,6 @@ The [D3.js gallery](https://github.com/d3/d3/wiki/Gallery) has great examples. W
 **Update 2:** Gephi wasn't the right tool for the job, yEd was a lot better (but not open source). I found [this neat collapsible tree demo](http://live.yworks.com/yfiles-for-html/2.0/complete/collapse/index.html) on their website, the balloon style was really nice.
 
 **Update 3:** Is graph-style visualization of the graph really important? It might be good if it can instill a sense of overview/progress but otherwise we should perhaps be sceptical. Facebook initially also planned to visualize a graph for you, but they dropped out. Probably due to business reasons, but might it be due to something else I fail to account for?
-
 
 # Issues
 
