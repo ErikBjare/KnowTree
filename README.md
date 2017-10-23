@@ -27,7 +27,7 @@ That does not longer seem to be the case, but I still think it should be to a la
 
 [Peter Thiel seems to agree](https://www.youtube.com/watch?v=rzdiWDw4teo&t=328s)
 
-I even found an old .txt file I had written in january 2012 about the "home of knowledge" which was an idea for a platform where learning resources could be shared and voted on in a reddit-like fashion.
+I even found an old .txt file I had written in January 2012 about the "home of knowledge" which was an idea for a platform where learning resources could be shared and voted on in a reddit-like fashion.
 
 ## Examples
 
@@ -91,6 +91,11 @@ Also, [Arbital](https://arbital.com/) is an example of a wiki with some fresh id
 Also found [Learnodoro](learnodoro.com) ([The creators Twitter](https://twitter.com/learnodoro)). Not entirely sure what the angle is but seems like he is planning some kind of progress system as well.
 
 **Update 5:** Just re-discovered https://openbadges.org/, seems like a good project that left a lot of the interesting parts untouched (no focus on personal tracking of progress, just on verifiable progress).
+
+**Update 6:** I've been meaning to write an update for quite a while now. First of all I discovered Mek Karpeles project [Skillsera](https://github.com/Skillsera) so I reached out to him. He reminded me of the existence of [Metacademy](metacademy.org) which I've completely forgotten about. Mek also invited me to a Slack for the [ArchiveLab](https://experiments.archivelab.org/) at the Internet Archive. Apparently people there have a shared interest in this kind of stuff.
+
+**Update 7:** [@hajak](https://twitter.com/hajak) found [@wynlim](https://www.patreon.com/wynlim) and linked to me. She's working on a ["self-directed learning network"](https://medium.com/the-experimental-year/designing-a-self-directed-learning-network-v0-3-8a8a990d0bfe), really cool stuff.
+
 
 
 # Implementation
