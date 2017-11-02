@@ -3,8 +3,6 @@ KnowTree
 
 (Name [undecided](#naming))
 
-For usage of the early prototyping code see `USAGE.md`.
-
 # About
 
 Similar to a [technology tree in video games](https://en.wikipedia.org/wiki/Technology_tree) but for learning stuff in real life. Essentially a dependency graph for learning.
@@ -95,6 +93,8 @@ Also found [Learnodoro](learnodoro.com) ([The creators Twitter](https://twitter.
 **Update 6:** I've been meaning to write an update for quite a while now. First of all I discovered Mek Karpeles project [Skillsera](https://github.com/Skillsera) so I reached out to him. He reminded me of the existence of [Metacademy](metacademy.org) which I've completely forgotten about. Mek also invited me to a Slack for the [ArchiveLab](https://experiments.archivelab.org/) at the Internet Archive. Apparently people there have a shared interest in this kind of stuff.
 
 **Update 7:** [@hajak](https://twitter.com/hajak) found [@wynlim](https://www.patreon.com/wynlim) and linked to me. She's working on a ["self-directed learning network"](https://medium.com/the-experimental-year/designing-a-self-directed-learning-network-v0-3-8a8a990d0bfe), really cool stuff.
+
+**Update 8:** When I started writing this article I found out about [Kristin and her Knowmap project](https://github.com/ksteph/KnowMap). I should probably reach out.
 
 
 
