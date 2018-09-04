@@ -11,7 +11,7 @@ The closest thing to this is, in some sense, Wikipedia. But it's meant to be a r
 
 It is essentially a new type of generation [Learning Management System](https://en.wikipedia.org/wiki/Learning_management_system) which is a lot more personal and of personal value.
 
-Perhaps a better analogy would be a fancy digital [learning log](https://en.wikipedia.org/wiki/Learning_log) where everything you've learned it immortalized. This would be used for analysis of what you know (based on what you have learned), what you don't, how you could learn something (links to rated resources) and make a lesson plan to learn anything (by mapping out learing prerequisites). It could also be used for simply keeping track of what you know and what you've learned, a good start. An activity graph would be a powerful tool to motivate the user.
+Perhaps a better analogy would be a fancy digital [learning log](https://en.wikipedia.org/wiki/Learning_log) where everything you've learned it immortalized. This would be used for analysis of what you know (based on what you have learned), what you don't, how you could learn something (links to rated resources) and make a lesson plan to learn anything (by mapping out learning prerequisites). It could also be used for simply keeping track of what you know and what you've learned, a good start. An activity graph would be a powerful tool to motivate the user.
 
 # Background
 
@@ -25,7 +25,7 @@ That does not longer seem to be the case, but I still think it should be to a la
 
 [Peter Thiel seems to agree](https://www.youtube.com/watch?v=rzdiWDw4teo&t=328s)
 
-I even found an old .txt file I had written in January 2012 about the "home of knowledge" which was an idea for a platform where learning resources could be shared and voted on in a reddit-like fashion.
+I even found an old `.txt` file I had written in January 2012 about the "home of knowledge" which was an idea for a platform where learning resources could be shared and voted on in a reddit-like fashion.
 
 ## Examples
 
@@ -84,7 +84,7 @@ Also, [Arbital](https://arbital.com/) is an example of a wiki with some fresh id
 
 **Update 4:** Got a Twitter ad for Pluralsight, apparently a long-time player in the technology learning market. They seem to have some sort of progress system but I've yet to try it. Should probably sign up for a trial and check it out.
 
-[Someone on HN posted a lecture search engine](https://news.ycombinator.com/item?id=14484549). Interesting stuff for sure, highly relevant (but we might want to go for curated/contributor style adding of learning resources instead of crawling the web to start with, leads to higher quality information).
+[Someone on HN posted a lecture search engine](https://news.ycombinator.com/item?id=14484549). Interesting stuff for sure, highly relevant (but we might want to go for curated/contributor style adding of learning resources instead of crawling the web to start with, leads to higher quality information, but that could also be solved with ratings).
 
 Also found [Learnodoro](learnodoro.com) ([The creators Twitter](https://twitter.com/learnodoro)). Not entirely sure what the angle is but seems like he is planning some kind of progress system as well.
 
@@ -96,6 +96,12 @@ Also found [Learnodoro](learnodoro.com) ([The creators Twitter](https://twitter.
 
 **Update 8:** When I started writing this article I found out about [Kristin and her Knowmap project](https://github.com/ksteph/KnowMap). I should probably reach out.
 
+
+So, in summary:
+
+ - Metacademy
+ - Pluralsight (commercial)
+ - Khan Academy (exclusive content, therefore limited in scope)
 
 
 # Implementation
@@ -177,7 +183,7 @@ There might be plenty of things making the idea in need of modification or entir
      - Pro users? *(I just went through and s/user/learner'd the whole document, I laughed when I realized this would become Pro learner)*
  - Internationalization
    - Learning resources are usually specific to a certain language, some are translated however. 
-   - We'd need to track which languages a resource is available in if we want to scale beyond an english-speaking audience.
+   - We'd need to track which languages a resource is available in if we want to scale beyond an English-speaking audience.
 
 
 # Feedback
@@ -190,4 +196,40 @@ The only feedback I've gotten so far has been extremely positive, still looking 
  - Is the tree actually a tree? Might it actually be a graph?
    - It will at least be a directed acyclic graph (I hope, otherwise it'd be messy)
  - Might a tree/graph like this be useful in training/building AI?
+
+
+# Additions v2 (2018-09-04)
+
+A more approachable version of the project, with the same end goal.
+
+
+ - A system where knowledge is packaged into flashcard-like pieces of knowledge.
+ - It can be a word in another language, an acronym, a mathematical formula, a random factoid you saw in a blog post,
+ - These pieces of knowledge which can be tagged, collected in categories, and have references to articles.
+
+
+### The basic UI
+
+The UI would first present categories or subjects that one could learn, when a subject is clicked, an ability test begins to gather approximate information about the users abilities. This consists of quizzing the user to estimate their proficiency.
+
+When a fact is shown, it can appear either:
+
+ - Explicitly, simply stating the fact.
+ - As a quiz that tests the knowledge.
+
+When the user has acknowledged the information, or answered/skipped the question, the user can take a few actions:
+
+ - Answer correctly: the user received a positive reinforcement for correctly answering.
+ - Answer incorrectly: the correct answer is shown.
+ - Dismiss card/mark uninterest ("I don't care about this")
+
+Once the answer is given:
+
+ - A "review" checkbox appears
+   - We might also want to indicate how "easy" this was, to automatically adjust the difficulty of future questions in a field.
+ - A dismiss button appears.
+ - Default would be to review at some future date (could be set either automatically or manually).
+
+All facts correctly answered should be added as a healthy leaf to ones tree of knowledge, it could yellows if it becomes old (hasn't been reviewed), and just be a sprout if never correctly answered.
+
 
